@@ -1,5 +1,9 @@
 using Documenter,DiffEqBase,DiffEqPDEBase,DiffEqProblemLibrary,DiffEqBiological
 
+Documenter.HTML(
+   assets = ["assets/favicon.ico"],
+)
+println("aHi.")
 makedocs(modules=[DiffEqBase,DiffEqPDEBase,DiffEqProblemLibrary,DiffEqBiological],
          doctest=false, clean=true,
          format = Documenter.HTML(
